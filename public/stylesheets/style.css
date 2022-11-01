@@ -1,0 +1,439 @@
+body {
+  background-color: #f6f7eb;
+  font-family: "Khula", sans-serif;
+  overflow-x: hidden;
+}
+nav {
+  background-color: #393e41;
+}
+nav span {
+  color: slateblue;
+}
+
+hr {
+  margin-left: -100px !important;
+  width: 120vw;
+  margin: 50px;
+}
+
+.jumbotron {
+  margin-top: 140px;
+  height: 90vh;
+}
+.jumbotron img {
+  position: absolute;
+  width: 350px;
+  right: 55px;
+}
+.jumbotron p {
+  opacity: 0.5;
+}
+.jumbotron .btn {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #000000;
+  transition: all 0.4s;
+}
+.jumbotron .btn:hover {
+  border-color: slateblue;
+  color: #eaeaeaea;
+  background-color: #333333cd;
+  transform: scale(0.97);
+}
+.jumbotron span {
+  color: slateblue;
+}
+
+.bg-icon img {
+  position: absolute;
+  width: 45px;
+}
+.jumbotron .img1 {
+  top: 100px;
+  left: 250px;
+}
+.jumbotron .img2 {
+  right: 250px;
+  bottom: 80px;
+}
+.jumbotron .img3 {
+  top: 350px;
+  left: 500px;
+}
+.jumbotron .img4 {
+  bottom: 100px;
+  left: 120px;
+}
+.jumbotron .img5 {
+  top: 150px;
+  right: 420px;
+}
+
+/* Best Seller */
+
+#bestSeller {
+  height: 850px;
+  padding-top: 50px;
+}
+#bestSeller h2 {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#bestSeller .recoment {
+  display: flex;
+  justify-content: space-evenly;
+}
+#bestSeller .bestFood {
+  border-radius: 20px;
+  border: 3px solid #000000;
+  background-color: #393e41;
+  color: #eaeaeaea;
+  width: 25%;
+  height: 430px;
+  transition: all 0.6s;
+}
+#bestSeller .recoment img {
+  border-radius: 17px 17px 0 0;
+  border-bottom: 3px solid #eaeaeaea;
+  width: 100%;
+  height: 220px;
+  transition: all 0.3s;
+}
+#bestSeller .recoment h3 {
+  font-size: 25px;
+  margin: 25px 0 15px 20px;
+}
+#bestSeller .recoment p {
+  font-size: 19px;
+  opacity: 0.88;
+  margin: 0 0 20px 20px;
+}
+#bestSeller .recoment button {
+  margin: 0 0 0 20px;
+  width: 100px;
+  padding: 7px;
+  border-radius: 10px;
+  border: 2px solid #eaeaeaea;
+  background-color: slateblue;
+  font-size: 17px;
+  font-weight: bold;
+  color: #eaeaeaea;
+  transition: all 0.2s;
+}
+#bestSeller .recoment button:hover {
+  transform: scale(0.95);
+  background-color: rgba(105, 90, 205, 0.781);
+}
+#bestSeller .recoment .food:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.55);
+  background-color: rgb(184, 137, 97);
+}
+#bestSeller .recoment .dessert:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.55);
+  background-color: rgb(77, 154, 184);
+}
+#bestSeller .recoment .drink:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.55);
+  background-color: rgb(59, 137, 59);
+}
+
+/* End */
+
+/* slider */
+.menu {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.menu h1 {
+  font-family: "Khula", sans-serif;
+}
+
+.menu .more {
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  top: -1px;
+}
+
+.menu .btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 12px;
+  border: none;
+  font-family: "Khula";
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.18);
+  font-weight: 400;
+  font-size: 20px;
+  width: 191px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.menu .slider .card-text button {
+  width: 80px;
+  padding: 1px;
+  background-color: #393e41;
+  color: #eaeaeaea;
+  border-radius: 10px;
+  border: 3px solid tomato;
+  transition: all 0.3s;
+}
+.menu .slider .card-text button:hover {
+  transform: scale(0.94);
+  background-color: transparent;
+  color: #000000;
+}
+
+.menu .btn a {
+  text-decoration: none;
+}
+
+.menu .btn img {
+  width: 20px;
+}
+
+.swiper {
+  background-color: transparent;
+  padding: 50px;
+  position: relative;
+  bottom: 80px;
+}
+
+.swiper-button-next {
+  color: black;
+}
+.swiper-button-prev {
+  color: black;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -5px;
+}
+.swiper-pagination-bullet {
+  width: 22px;
+  height: 22px;
+  transition: 0.4s;
+}
+.swiper-pagination-bullet-active {
+  --swiper-theme-color: #222;
+  width: 38px;
+  height: 22px;
+  border-radius: 20px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0px 1px;
+}
+
+.card {
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.2);
+  width: 336px;
+  height: 376px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content {
+  font-family: "Khula", sans-serif;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-text h1 {
+  font-size: 25px;
+}
+.card-text p {
+  font-size: 20px;
+}
+
+.card-img {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img img {
+  height: 167px;
+  width: 167px;
+  object-fit: cover;
+  border-radius: 20%;
+  margin-bottom: 28px;
+}
+/* End */
+
+/* Trolli */
+.back {
+  margin-left: -70px;
+  width: 100px;
+}
+.btnBack {
+  width: 120px;
+  border: none;
+}
+.btnBack:hover {
+  opacity: 0.8;
+}
+.trolli h3 {
+  margin: 50px 0 30px 0;
+}
+table {
+  background-color: #393e41;
+  border-radius: 15px;
+  color: white;
+  width: 90%;
+  height: 200px;
+}
+
+table th {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+table td {
+  font-weight: bold;
+  border-right: 1px solid white;
+}
+
+table button {
+  width: 60px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+table button:hover {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+/* End */
+
+/* Footer */
+footer {
+  margin-top: 100px;
+  background-color: #393e41;
+  color: #f6f2ff;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+footer .logo img {
+  padding-right: 25px;
+  float: left;
+}
+
+footer .logo h2 {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer .logo h6 {
+  font-size: 15px;
+  line-height: 25px;
+  cursor: default;
+  opacity: 0.7;
+}
+
+footer .nameSosmed {
+  cursor: default;
+  text-align: right;
+  margin-top: -100px;
+  margin-bottom: 20px;
+}
+
+footer .sosmed img {
+  width: 24px;
+  margin-right: 5px;
+}
+footer .sosmed {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+footer .sosmed a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(211, 211, 211);
+}
+
+/* End */
+/* Responsive Breakpoint */
+
+@media screen and (min-width: 996px) {
+  .trolli {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .jumbotron {
+    text-align: center;
+    height: 570px;
+  }
+  .jumbotron img {
+    display: none;
+  }
+  #bestSeller {
+    height: 220vh;
+  }
+  #bestSeller .recoment {
+    justify-content: center;
+    flex-direction: column;
+  }
+  #bestSeller .bestFood {
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .btnBack {
+    margin-left: 45px;
+  }
+  table {
+    width: 100%;
+  }
+  footer .logo img {
+    width: 50px;
+    padding: 5px;
+  }
+  footer .logo h2 {
+    font-size: 15px;
+  }
+
+  footer .logo h6 {
+    font-size: 10px;
+  }
+
+  footer .nameSosmed h2 {
+    font-size: 15px;
+  }
+  footer .sosmed img {
+    width: 20px;
+  }
+  footer .sosmed a {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-family: "Khula", sans-serif;
+  background-color: #f6f7eb;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+}
+table .action {
+  width: 30%;
+}
+
+.sideNav {
+  float: left;
+  background-color: #393e41;
+  color: white;
+  width: 302px;
+  height: auto;
+  padding-bottom: 63vh;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.sideNav.slide {
+  transform: translateX(0);
+}
+.sideNav .profile {
+  top: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 55px;
+  background-color: #d9d9d9;
+  width: 115px;
+  height: 115px;
+  border-radius: 100%;
+}
+.profile img {
+  margin-top: 15px;
+  border-radius: 100%;
+  width: 82px;
+}
+.sideNav h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: -45px;
+}
+.sideNav .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sideNav .nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: 35px;
+}
+.sideNav .nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #eaeaeaea;
+}
+.sideNav .nav ul li a:hover {
+  opacity: 0.6;
+}
+/* Other */
+.other {
+  margin-top: 115px;
+}
+.other ul li a {
+  margin-top: -50px;
+}
+.other ul li button {
+  margin-top: -50px;
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.808);
+  font-size: 20px;
+  font-weight: bold;
+}
+.other ul li button:hover {
+  opacity: 0.5;
+}
+
+/* End */
+
+/* Hamburger Menu Animation */
+.menuToggle {
+  position: absolute;
+  margin: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+}
+.menuToggle input[type="checkbox"] {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -10px;
+  top: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+.menuToggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.menuToggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menuToggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menuToggle input:checked ~ span:nth-child(2) {
+  background-color: #eaeaeaea;
+  transform: rotate(45deg) translate(-1px, 1px);
+}
+.menuToggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  opacity: 0;
+}
+.menuToggle input:checked ~ span:nth-child(4) {
+  background-color: #eaeaeaea;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+/* End */
+
+/* Dashboard */
+
+@media screen and (min-width: 768px) {
+  #dashboard {
+    transition: all 1s;
+  }
+  .box {
+    padding: 20px;
+    width: 250px;
+    height: 150px;
+    border: 3px solid #222;
+    border-radius: 15px;
+    transition: all 1s;
+  }
+  .costumers {
+    background-color: slateblue;
+    color: #eaeaeaea;
+  }
+  .products {
+    background-color: yellow;
+  }
+  .orders {
+    background-color: steelblue;
+    color: #eaeaeaea;
+  }
+  .income {
+    background-color: green;
+    color: #eaeaeaea;
+  }
+  .box p {
+    opacity: 0.6;
+  }
+
+  #dashboard.smallDashboard {
+    transition: all 1s;
+    transform: translateX(250px);
+    width: 73%;
+  }
+  #dashboard.smallDashboard .box {
+    width: 250px;
+    margin: 0 5px 0 5px;
+  }
+  /* End */
+
+  /* Chart Js */
+  .chartLine-container {
+    margin-top: 50px;
+    right: 20px;
+    width: 45vw;
+    height: 45vh;
+    transition: all 1s;
+    /* transform: translateX(50px); */
+  }
+
+  .chartLine-container.smallLine {
+    transition: all 0.5s;
+    right: 10px;
+    width: 45vw;
+    height: 45vh;
+  }
+
+  .doughnut-container {
+    transform: translateX(100px);
+    margin-top: 20px;
+    transition: all 1s;
+  }
+  .doughnut-container.smallDoughnut {
+    transform: translateX(0);
+    transition: all 1s;
+  }
+}
+
+/* Product */
+table {
+  background-color: #393e41;
+  border-radius: 15px;
+  color: white;
+  width: 90%;
+  height: 200px;
+}
+
+table th {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+table td {
+  font-weight: bold;
+  border-right: 1px solid white;
+}
+
+table button {
+  width: 60px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+table button:hover {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+/* End */
+
+/* Responsive breakpoint */
+@media screen and (max-width: 678px) {
+  #dashboard {
+    margin-top: 20px;
+    z-index: -2;
+  }
+  .box {
+    padding: 20px;
+    width: 90%;
+    height: 100px;
+    border: 3px solid #222;
+    border-radius: 15px;
+    transition: all 1s;
+  }
+  .costumers {
+    background-color: slateblue;
+    color: #eaeaeaea;
+    font-size: 15px;
+  }
+  .products {
+    background-color: yellow;
+    font-size: 15px;
+    margin: 0 10px 0 10px;
+  }
+  .orders {
+    background-color: steelblue;
+    color: #eaeaeaea;
+    margin-right: 20px;
+  }
+  .income {
+    width: 200px;
+    position: absolute;
+    margin-top: 115px;
+    background-color: green;
+    color: #eaeaeaea;
+  }
+  .box p {
+    opacity: 0.6;
+  }
+
+  .chartLine-container {
+    width: 90vw;
+    height: 100vh;
+    margin-top: 150px;
+  }
+  .doughnut-container {
+    width: 90vw;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 340px;
+  }
+}
