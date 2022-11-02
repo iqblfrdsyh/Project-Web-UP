@@ -240,7 +240,54 @@ table button:hover {
   opacity: 0.7;
   transform: scale(0.95);
 }
+#product-container {
+  transform: translateX(-100px);
+  margin-top: 20px;
+  transition: all 1s;
+}
+#product-container.smallProduct {
+  transform: translateX(0);
+  transition: all 1s;
+}
 /* End */
+/* transaction*/
+table {
+  background-color: #393e41;
+  border-radius: 15px;
+  color: white;
+  width: 90%;
+  height: 200px;
+}
+table th {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+table td {
+  font-weight: bold;
+  border-right: 1px solid white;
+}
+
+table button {
+  width: 80px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+table button:hover {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+#transaction-container {
+  transform: translateX(-100px);
+  margin-top: 20px;
+  transition: all 1s;
+}
+#transaction-container.smallTransaction {
+  transform: translateX(100px);
+  transition: all 1s;
+}
+/* end */
 
 /* Responsive breakpoint */
 @media screen and (max-width: 678px) {
