@@ -1,19 +1,25 @@
+
 const menuToggle = document.querySelector(".menuToggle input");
 const nav = document.querySelector(".sideNav");
 const chartLine = document.querySelector(".chartLine-container");
 const chartDoughnut = document.querySelector(".doughnut-container");
 const dashboard = document.getElementById("dashboard");
-const product = document.getElementById("product-container");
-const transaction = document.getElementById("transaction-container");
-
 menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("slide");
-  chartLine.classList.toggle("smallLine");
-  chartDoughnut.classList.toggle("smallDoughnut");
-  dashboard.classList.toggle("smallDashboard");
-  product.classList.toggle("smallProduct");
-  transaction.classList.toggle("smallTransaction");
-});
+  nav.classList.toggle("slide")
+  dashboard.classList.toggle("smallDashboard")
+  chartLine.classList.toggle("smallLine")
+  chartDoughnut.classList.toggle("smallDoughnut")
+})
+
+const product = document.getElementById("product-container");
+menuToggle.addEventListener('click', () => {
+  product.classList.toggle("smallProduct")
+})
+
+const transaction = document.getElementById('transaction-container')
+menuToggle.addEventListener('click', () => {
+  transaction.classList.toggle('smallTransaction')
+})
 
 // Logout
 const btnLogout = document.getElementById("logout");

@@ -212,79 +212,82 @@ table .action {
 }
 
 /* Product */
-table {
+#product-container {
+  position: absolute;
+  transition: all 1s;
+}
+#product-container table {
   background-color: #393e41;
   border-radius: 15px;
   color: white;
-  width: 90%;
+  width: 70%;
   height: 200px;
 }
 
-table th {
+#product-container table th {
   border-bottom: 1px solid white;
   border-right: 1px solid white;
 }
 
-table td {
+#product-container table td {
   font-weight: bold;
   border-right: 1px solid white;
 }
 
-table button {
-  width: 60px;
+#product-container table button {
+  width: 100px;
+  padding: 3px;
   border-radius: 10px;
   font-weight: bold;
   transition: all 0.5s;
 }
-table button:hover {
+#product-container table button:hover {
   opacity: 0.7;
   transform: scale(0.95);
 }
-#product-container {
-  transform: translateX(-100px);
-  margin-top: 20px;
-  transition: all 1s;
-}
 #product-container.smallProduct {
-  transform: translateX(0);
+  transform: translateX(25%);
   transition: all 1s;
 }
 /* End */
 /* transaction*/
-table {
+#transaction-container {
+  position: absolute;
+  transition: all 1s;
+}
+#transaction-container table {
   background-color: #393e41;
   border-radius: 15px;
   color: white;
-  width: 90%;
+  width: 70%;
   height: 200px;
 }
-table th {
+#transaction-container table th {
   border-bottom: 1px solid white;
   border-right: 1px solid white;
 }
 
-table td {
+#transaction-container table td {
   font-weight: bold;
   border-right: 1px solid white;
 }
 
-table button {
-  width: 80px;
+#transaction-container table button {
+  padding: 5px;
   border-radius: 10px;
   font-weight: bold;
-  transition: all 0.5s;
+  cursor: default;
 }
-table button:hover {
-  opacity: 0.7;
-  transform: scale(0.95);
+#transaction-container table #btn1 {
+  background-color: rgb(21, 159, 21);
+  color: #fff;
 }
-#transaction-container {
-  transform: translateX(-100px);
-  margin-top: 20px;
-  transition: all 1s;
+#transaction-container table #btn2 {
+  background-color: rgb(253, 61, 61);
+  color: #fff;
 }
 #transaction-container.smallTransaction {
-  transform: translateX(100px);
+  transform: translateX(25%);
   transition: all 1s;
 }
 /* end */
